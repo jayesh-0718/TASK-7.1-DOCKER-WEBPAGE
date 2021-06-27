@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function lw()
+{
+        var cmd = document.getElementById("command").value;
+        var xhr = new XMLHttpRequest();
+
+        xhr.open("GET", "http://192.168.1.12/cgi-bin/backend.py?command="+cmd, true);
+        xhr.send();
+
+        //output
+
+        xhr.onload = function() {
+            var output = xhr.responseText;
+            document.getElementById("output").innerHTML = output;
+        }
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+<center>
+
+<br>
+
+<br>
+<h1>ENTER COMMAND :- </h1>
+<input type= "text" id="command" placeholder= "[root@localhost ~]">
+<br><br>
+<button id="submit" onclick="lw()">Execute</button>
+<br>
+
+<div style="font-size: 15px; text-align: center;" id="output">
+</div>
+
+</center>
+
+</div>
+</body>
+</html>

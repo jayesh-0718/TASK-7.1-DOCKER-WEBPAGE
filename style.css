@@ -1,0 +1,67 @@
+
+:root{
+    
+    --left-color: #804c1c;
+    --right-color: #7047b3;
+  }
+  body{
+    letter-spacing: 1.5px;
+    color: white;
+    background-image: linear-gradient(to right, var(--left-color), var(--right-color));
+  }
+  .container{
+    width: 50%;
+    height: 55%;
+    border-radius: 5px;
+    background-color: rgb(32, 170, 204);
+    padding: 8px 8px;
+    float:left;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  input[type=text], select {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #c51313;
+    border-radius: 8px;
+  }
+  input[type=text]:focus {
+    border: 2px solid var(--right-color);
+  }
+  #submit {
+    width: 30%;
+    height: 8%;
+    background-color: #b44e48;
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+  #submit:hover {
+    background-color: #38b33e;
+  }
+  h1{
+  font-size: 50px;
+  color: rgb(36, 37, 41);
+  }
+  div#output{
+    width: 90%;
+    padding: 5px 5px;
+    margin: 5px 0px;
+    border-radius: 8px;
+    background-color: rgb(88, 83, 58);
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  
